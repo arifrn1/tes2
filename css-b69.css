@@ -1,0 +1,678 @@
+
+body{
+	margin: 0;
+    padding:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.container{
+	width: 100%;
+}
+
+/*CSS UNTUK HEADER*/
+header{
+	height :65px;
+	width:100%;
+	background-color:rgba(36,36,36,0.3);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+.header-left{
+	float: left;
+}
+
+.logo{
+	width: 150px;
+	margin: 15px 100px 0 50px;
+}
+
+.header-right{   
+	font-family: 'Josefin Sans', sans-serif;
+    margin-right: 200px;
+}
+
+
+.flex-menu{
+	display: flex;
+}
+
+.flex-menu a{
+	flex: auto;
+	display: block;
+	line-height: 65px;
+	padding:auto;
+	color: white;
+	text-align:center;
+}
+
+.flex-menu a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+  	transition:all 0.5s; 
+}
+
+/*CSS UNTUK BOX*/
+.body-box{
+    position:absolute;
+    margin: 0
+    padding:0;  
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.container-box{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 400px auto 0; 
+}
+
+.container-box .box
+{
+    position: relative;
+    width: 370px;
+    height:270px;
+    background : #000;
+    float: left;
+    margin : 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.container-box .box .ikon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;/*
+    opacity: 0.8;*/
+}
+
+.container-box .box:hover .ikon{
+    top:20px;
+    left:-webkit-calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity:1;
+}
+
+.container-box .box .ikon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.container-box .box:hover .ikon .fa{
+    font-size: 40px;
+    opacity:1;
+}
+
+.container-box .box .konten{
+    position: absolute;
+    top:100px;
+    height:-webkit-calc(100% - 100px);
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container-box .box:hover .konten{
+    top: 50%;
+    opacity: 1;
+}
+
+.container-box .box .konten h3{
+    margin:0 0 10px;
+    padding:0;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+.container-box .box .konten p{
+    margin:0;
+    padding: 0;
+    color: #fff; 
+}
+
+.container-box .box:nth-child(1) .ikon{
+    background:#319635;
+}
+
+.container-box .box:nth-child(1) {
+    background:#4caf50;
+}
+
+.container-box .box:nth-child(2) .ikon{
+    background:#d03852;
+}
+
+.container-box .box:nth-child(2) {
+    background:#f54967;
+}
+
+.container-box .box:nth-child(3) .ikon{
+    background:#23798e;
+}
+
+.container-box .box:nth-child(3) {
+    background:#328fa5;
+}
+
+
+
+
+/*CSS UNTUK BANNER*/
+.banner{
+	margin: 0;
+	padding: 0;  
+    height: 730px;
+}
+
+.banner1,.banner2,.banner3,.banner4,.banner5{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+    height: 730px;
+    overflow: hidden;
+}
+
+.banner img{
+	width: 120%;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+
+.text-banner{
+    width:100%;
+    position: absolute;
+    top: 150px;
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+    animation: textup 15s linear infinite;
+    transform: translateY(100px);
+}
+
+.text-banner h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100px; 
+    font-weight: normal;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+.text-banner p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    letter-spacing: 20px;
+}
+
+.banner1{
+    animation: slide1 15s linear infinite;
+}
+
+
+.banner2{
+    animation: slide2 15s linear infinite;
+}
+
+.banner3{
+    animation: slide3 15s linear infinite;
+}
+
+.banner4{
+    animation: slide4 15s linear infinite;
+}
+
+.banner5{
+    animation: slide5 15s linear infinite;
+}
+
+ 
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+ }
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: visible;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+ }
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: visible;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+ }
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+ }
+
+@keyframes slide5{
+    0%{
+        visibility: hidden;
+    }
+    20%{
+        visibility: hidden;
+    }
+    40%{
+        visibility: hidden;
+    }
+    60%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+ }
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.tx1{
+    animation-delay: 0s;
+}
+
+.tx2{
+    animation-delay: 3s;
+}
+
+.tx3{
+    animation-delay: 6s;
+}
+
+.tx4{
+    animation-delay: 9s;
+}
+
+.tx5{
+    animation-delay: 12s;
+}
+
+
+/*css untuk paket liburan*/
+
+.paket * {
+  margin: 0;
+  padding: 0;
+}
+ 
+.paket {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  border-top: 5px solid #fec73b;
+  box-sizing: border-box; 
+  z-index: 7;
+}
+
+.paket h1 {
+  font-weight: normal;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+  
+.section{
+    height: 80vh;
+    display: flex;
+    border-bottom: 5px solid #fec73b;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.city{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.city:hover{
+    flex: 3;
+}
+
+.city-pic{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+
+.city:hover .city-pic{
+    filter: grayscale(0);
+}
+
+.city-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.city:hover .city-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+
+.city-info h2{
+    font-size: 80px;
+    font-weight: bold; 
+    color: #fff;
+    margin-bottom: 70px
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.city-info p{
+    display: inline-block;
+    padding: 10px 14px;
+    color: #fff;
+    background-color: #080b05;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: .3s linear;
+    font-family: 'Josefin Sans', sans-serif;
+}  
+.loct a{
+    display: inline-block;
+    padding: 18px 10px;
+    color: #333;
+    background-color: #55acee;
+    line-height: 0px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 6px;
+    font-size: 18px;
+    transition: .3s linear;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*CSS DESTINASI FAVORIT*/
+
+
+.contents{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+    height: 550px;
+    
+}
+
+.heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #5f5d60;
+}
+
+.heading h2{
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.popular{
+    float: left;
+    width: 25%;
+    display: flex;
+}
+ 
+.popular-item {
+    position: relative;
+    flex-wrap: wrap;
+    height:300px;
+    display:block; 
+}
+
+.txt-judul{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+.txt-contents {
+    
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;  
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+
+/*CSS UNTUK FOOTER*/
+
+footer{
+    font-family: 'Josefin Sans', sans-serif; 
+    background-color: #f7f7f7;
+}
+
+      
+.kelompok {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    color: black;
+    border-top: 5px solid #fec73b;
+}
+
+.kelompok h2 {
+    padding-top: 13px;
+    opacity: 0.7;
+}
+
+.container-f1:hover {
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.container-f1:hover h2 {
+    animation: hinge; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.foot1{   
+    background-color: #f7f7f7;
+    text-align: center;
+    height: 280px;
+}
+
+.container-f1 {
+    width: 100%;
+    height: 300px; 
+    /*background-image: url(https://user-images.githubusercontent.com/67105615/85192865-59fdfe80-b2ee-11ea-8202-129f0fb8b44d.jpg);*/
+    /*background-size: cover;*/
+    text-align: center; 
+}
+
+
+.nama{
+    float: left;
+    width: 25%;
+    display: flex; 
+}
+ 
+.nam { 
+    flex-wrap: wrap;
+    height:100px;
+    display:block; 
+    margin:auto;
+}
+
+.nam p{ 
+    width: 100%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px; 
+    opacity: 0.7;
+}
+
+.nam img{
+    width:150px;
+}
+
+/*TAMBAHAN FOOTER*/
+
+.footrg {
+    float: right;
+    display: block; 
+    margin-top: 120px;
+    margin-right: 20px;
+}
+
+.footrg p {
+    font-size: 10px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.footrg img{
+    width: 150px
+}
+
+.foot2{
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.container-f2{
+    background-image:url('https://user-images.githubusercontent.com/67152399/85220567-b9cfd480-b3d6-11ea-9030-20cc1fdb599b.png');
+    height:200px;
+    background-size: cover;
+}
+
+.footlf{
+    float: left;  
+    margin-top: 55px;
+}
+ 
+.footlf p{
+    margin-left: 50px;
+    color: white; 
+    font-size: 10px;
+}
